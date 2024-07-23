@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        Library.
+    </div>
+
+    <div class="content">
+
+        
+        <div class="books">
+
+            <!--mock card blueprint
+            <div class="card">
+                <div class="cardhead">
+                    <h1>Meditations</h1>
+                    <button class="bookdelbtn">x</button>
+                </div>
+                <div class="cardbody">
+                    <div class="cardauthor">Marcus Aurelius</div>
+                    <div class="cardpages">191</div>
+                    <div class="cardread">true</div>
+                </div>
+            </div>-->
+        
+        </div>
+
+
+            <!--Tha Form-->
+        <dialog>
+            <form action="#" method="dialog" class="bookform">
+                <div class="formhead">
+                    <h1>Book!</h1>
+                    <button class="cancelbtn">cancel</button>
+                </div>
+
+                <div>
+                    <label for="titleinput">Title</label>
+                    <input type="text" placeholder="Book Title" class="titleinput">
+                </div>
+
+                <div>
+                    <label for="authorinput">Author</label>
+                    <input type="text" placeholder="Author" class="authorinput">
+                </div>
+
+                <div>
+                    <label for="pagesinput">Pages</label>
+                    <input type="number" placeholder="Total Pages" class="pagesinput">
+                </div>    
+                        
+                <div>
+                    <label for="readinput">have u reed</label>
+                    <input type="checkbox" class="readinput">
+
+                    <button type="submit" class="submitbtn" autofocus>Submit</button>
+                </div>
+            </form>
+        </dialog>
+
+
+
+        <div class="addbook">
+            <button class="bookbutton">Add a book</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- CARD TEMPLATE. MAKE THIS IN THE JAVASCRIPT NOW :D
+<div class="card">
+    <div class="cardhead">
+        <h1>book title</h1>
+        <button>close button</button>
+    </div>
+    <div class="cardbody">
+        <p class="cardauthor"></p>
+        <p class="cardpages"></p>
+        <p class="cardread"></p>
+    </div>
+</div>
+-->

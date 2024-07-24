@@ -5,13 +5,14 @@
 //      displayBooks();
 
 
+
+
 // add a book button
 let formbutton = document.querySelector(".bookbutton");
-// event listener to add a new book
 formbutton.addEventListener("click", showForm);
 
 
-// the book submit btn.
+// the form submit btn.
 let booksubmit = document.querySelector(".submitbtn");
 booksubmit.addEventListener("click", addBookToLibrary);
 
@@ -26,10 +27,11 @@ let bookscontainer = document.querySelector('.books');
 
 
 
+
+
+
+
 let library = [];
-
-
-
 
 function Book(title, author, pages, read){
     // constructs the book.
@@ -64,8 +66,6 @@ function addBookToLibrary(){
     let pages = document.querySelector(".pagesinput").value;
     let read = document.querySelector(".readinput").checked;
 
-    console.log(read);
-
     // feed it into constructor.
     let book = new Book(title, author, pages, read);
 
@@ -80,7 +80,7 @@ function addBookToLibrary(){
 function displayBooks(objectlist){
     bookscontainer.textContent = '';
 
-    objectlist.forEach((book) => {
+    objectlist.forEach((book, index) => {
         //for each book in our list:
         
         //create the card layout.
@@ -132,13 +132,12 @@ function displayBooks(objectlist){
         let bookdiv = document.querySelector('.books');
         bookdiv.appendChild(card);
         
-    
-        //assign the appropriate classes.
+        })
+        
+    }
 
-        //append this child to the books div.
-        console.log(book);
-    })
-}
+
+
 
 
 

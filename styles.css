@@ -122,6 +122,23 @@ form{
     cursor: pointer;
 }
 
+.thebookbox{
+margin-left: 30vw;
+margin-top: 30vh;
+border: none;
+border-radius: 6px;
+}
+
+.bookform{
+    padding: 20px;
+    border-radius: 6px;
+    background-color: rgb(156, 156, 156);
+}
+.bookform input{
+    padding: 8px;
+    margin: 6px;
+}
+
 
 
 
